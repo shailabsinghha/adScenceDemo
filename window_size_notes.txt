@@ -1,0 +1,35 @@
+*******************************
+This is most probably the screen sizes
+
+ var Oa = {
+            "120x90": !0,
+            "160x90": !0,
+            "180x90": !0,
+            "200x90": !0,
+            "468x15": !0,
+            "728x15": !0
+        }
+
+*************************************
+
+
+*************************************
+
+This will set the window size at some standard based on some event most probably the screen size different if the dimensions lie in between 
+
+
+ Pa = function(a, b) {
+            if (15 == b) {
+                if (728 <= a) return 728;
+                if (468 <= a) return 468
+            } else if (90 == b) {
+                if (200 <= a) return 200;
+                if (180 <= a) return 180;
+                if (160 <= a) return 160;
+                if (120 <= a) return 120
+            }
+            return null
+        }
+
+
+*************************************

@@ -3,10 +3,10 @@
             var b = function() {};
             b.prototype = a;
             return new b
-        },
+        }, // CREATED AN OBJECT OF TYPE AA WITH CREATE TYPE
         ea;
-    if ("function" == typeof Object.setPrototypeOf) ea = Object.setPrototypeOf;
-    else {
+    if ("function" == typeof Object.setPrototypeOf) ea = Object.setPrototypeOf; // CREATE AN OBJECT OF TYPE EA WITH TYPE SETPROTYPEOF  
+    else { // IF IT IS OF TYPE SETPROTOTYPE ELSE
         var fa;
         a: {
             var ha = {

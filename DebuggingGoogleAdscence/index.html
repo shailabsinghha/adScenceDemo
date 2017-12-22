@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+(function() {
+    var aa = "function" == typeof Object.create ? Object.create : function(a) {
+            var b = function() {};
+            b.prototype = a;
+            return new b
+        }
+
+     	console.log(aa);
+    }).call(this)
+	
+</script>
+
+</body>
+</html>
