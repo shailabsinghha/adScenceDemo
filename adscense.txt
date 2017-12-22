@@ -1,7 +1,0 @@
-Tasks Given so far (Pure Js)
-
-1. Load an Image from the URL using javascipt after the Document is ready
-2. GET ipAdress from a Url in json format and display it 
-3. Encyrpt the request so that user cannot see the requests sent from there 
-4. See information about the user_agent
-5. Check other Publishers information

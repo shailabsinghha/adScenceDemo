@@ -6,16 +6,23 @@
 <body>
 
 <script type="text/javascript">
+(function(){
 
-(function() {
-    var aa = "function" == typeof Object.create ? Object.create : function(a) {
-            var b = function() {};
-            b.prototype = a;
-            return new b
-        }
+	function ya(a){
+		return "string" == typeof(a);
+	};
+	// I dont understand one thing in here that is ya function
+	var a = "hello";
+    for (var c = a.length, d = ya(a) ? a.split("") : a, e = 0; e < c; e++){
+    	
+    	if (e in d){
+    		console.log(e, d);
+    	}
 
-     	console.log(aa);
-    }).call(this)
+    }
+      
+
+}).call(this);
 	
 </script>
 

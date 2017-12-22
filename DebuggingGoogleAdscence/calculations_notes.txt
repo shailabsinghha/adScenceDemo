@@ -1,0 +1,100 @@
+*****************************************************************
+There is a ya function which will return the 
+
+ya = function(a) {
+            return "string" == typeof a
+        }
+
+*****************************************************************
+
+
+
+*****************************************************************
+// This one returns the number in decimal format
+
+    var Qa = function(a, b) {
+            a = parseInt(a, 10);
+            return isNaN(a) ? b : a
+        }
+
+*****************************************************************
+
+
+*****************************************************************
+// This regular Expression means (word or not equiavlent to any digit [^0-9]) or (\n, \r, \u2028 or \u2029.) closure 		
+        Ra = /^([\w-]+\.)*([\w-]{2,})(:[0-9]+)?$/
+
+So I can conclude that the Reguale expression can be simply said to be somthing just like this following 
+
+S-1f-ad-4f-aS-1f-a  
+
+/*
+TODO: this pattern will end with w- 2 times then colon wiht atleast 1 digit or maybe a bigger a sizeof number and a question mark(?) .....now why so it has to checked Why this regular expression!!!
+*/
+
+*****************************************************************
+        
+
+
+*****************************************************************
+//This will return a[0] if the expression is matched else b        
+
+        Sa = function(a, b) {
+            return a ? (a = a.match(Ra)) ? a[0] : b : b
+        };
+
+*****************************************************************
+        
+
+
+*****************************************************************
+        
+
+    var Ta = Qa("468", 0); 
+    
+
+    /*
+     
+     Converting this string into decimal this function willl return 0 if no string is passed 
+     This utility will be usefull in the further case 
+
+
+    */
+
+
+    var Ua = function(a, b) {
+            for (var c = a.length, d = ya(a) ? a.split("") : a, e = 0; e < c; e++) e in d && b.call(void 0, d[e], e, a)
+        },
+
+
+        /*
+        	Prototype of B function We will see later 
+
+        	B{
+
+        			a1:
+        			a2:
+        			a3:
+        			a4:
+
+        	};
+
+        	if no string is return it will set d to a
+
+        */
+
+        Va = function(a) {
+            return Array.prototype.concat.apply([], arguments)
+        };
+
+    var Xa = function(a, b) {
+        for (var c in a)
+            if (b.call(void 0, a[c], c, a)) return c
+    };
+
+    var Za = function() {
+        this.j = "";
+        this.l = Ya
+    };
+
+****************************************************************
